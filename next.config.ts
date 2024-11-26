@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: process.env.NODE_ENV === "production" ? "/onlyup-landing" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/onlyup-landing/" : "",
   typescript: {
     ignoreBuildErrors: false,
   },
